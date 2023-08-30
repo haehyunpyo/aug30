@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" th:href="@{./css/login.css}"/>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<div class="login=form">
+		<form th:action="@{/login}" method="post">
+			<div class="idBox">
+				<input type="text" name="id" id="id" th:placeholder="아이디입력" required="required">
+			</div>
+			<div class="pwBox">
+				<input type="text" name="pw" id="pw" th:placeholder="비밀번호입력" required="required">
+			</div>
+			<div class="btnBox">
+				<button type="submit">로그인</button>
+			</div>
+		</form>
+	</div>
+	
+</body>
+</html>
